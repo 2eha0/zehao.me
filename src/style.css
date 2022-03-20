@@ -27,11 +27,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-sans: Georgia,serif;
+  --fontFamily-serif: Georgia,serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -40,7 +37,7 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 20px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -54,10 +51,11 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
+  --color-background: #f5f2f0;
+  --color-primary: #3F8B53;
+  --color-text: #132b1a;
+  --color-text-light: #C16347;
+  --color-heading: #132b1a;
   --color-heading-black: black;
   --color-accent: #d1dce5;
 }
@@ -75,6 +73,7 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--color-background)
 }
 
 body {
@@ -313,6 +312,29 @@ a:focus {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+}
+
+.blog-post a {
+  color: var(--color-text);
+  text-decoration: none;
+  position: relative;
+}
+
+.blog-post a::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  background: rgba(179,197,96,.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.blog-post a:hover::before {
+  background: rgba(179,197,96,1);
 }
 
 .gatsby-highlight {

@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Commonts from '../components/commonts'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -60,6 +61,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </li>
         </ul>
       </nav>
+      <Commonts />
     </Layout>
   )
 }
