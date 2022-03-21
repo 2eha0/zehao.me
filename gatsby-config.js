@@ -28,7 +28,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`, // todo: 集成 pangu
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
@@ -46,6 +46,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-pangu`,
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
