@@ -23,6 +23,8 @@ const Bio = () => {
     }
   `)
 
+  return null
+
   // Set these values by editing "siteMetadata" in gatsby-config.js
   // const author = data.site.siteMetadata?.author
   const description = data.site.siteMetadata?.description
