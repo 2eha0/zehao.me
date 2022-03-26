@@ -27,8 +27,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Georgia,serif;
-  --fontFamily-serif: Georgia,serif;
+  --fontFamily-sans: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fontFamily-serif: charter, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -84,6 +84,8 @@ body {
 
 footer {
   padding: var(--spacing-6) var(--spacing-0);
+  display: flex;
+  justify-content: space-between;
 }
 
 hr {
@@ -320,7 +322,7 @@ a:focus {
   position: relative;
 }
 
-.blog-post a::before {
+.blog-post a:not(.gatsby-resp-image-link)::before {
   content: '';
   display: inline-block;
   height: 8px;

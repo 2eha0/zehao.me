@@ -27,7 +27,12 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}
+        <div>
+          <a href="/rss.xml" target="_blank">rss</a> · <a href="https://github.com/2eha0" target="_blank">github</a>
+        </div>
+        <div>
+        Zehao © {new Date().getFullYear()}
+        </div>
       </footer>
     </div>
   )
