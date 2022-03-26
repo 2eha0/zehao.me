@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Zehao's Blog`,
+    title: `🌱 赛博花园`,
     author: {
       name: `zehao`,
       summary: `Web Developer`,
@@ -34,7 +34,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 790,
             },
           },
           {
@@ -59,12 +59,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -113,7 +107,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Zehao's Blog RSS Feed",
+            title: "🌱 赛博花园 RSS Feed",
           },
         ],
       },
@@ -121,8 +115,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Zehao's Blog`,
-        short_name: `Zehao's Blog`,
+        name: `🌱 赛博花园`,
+        short_name: `🌱 赛博花园`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
@@ -133,8 +127,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-0F2ZLF527P", // Google Analytics / GA
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
   ],
 }

@@ -280,6 +280,10 @@ a:focus {
   margin-bottom: var(--spacing-4);
 }
 
+.post-list-item header small:not(:last-child) {
+  margin-right: 1em;
+}
+
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
@@ -308,8 +312,12 @@ a:focus {
 }
 
 .blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-serif);
+}
+
+.blog-post header p span:not(:last-child) {
+  margin-right: 1em;
 }
 
 .blog-post-nav ul {

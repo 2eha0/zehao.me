@@ -70,13 +70,21 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `baidu-site-verification`,
+          content: `code-RGjCtBQFrC`,
+        },
+        {
+          name: `google-site-verification`,
+          content: `Y1K5ZXnfMv-MDaFSTzD2Mg5gOeXHRUr55FxRFfNmoV4`,
+        },
       ].concat(meta)}
     />
   )
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `zh-CN`,
   meta: [],
   description: ``,
 }
