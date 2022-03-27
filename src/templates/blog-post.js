@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Commonts from '../components/commonts'
+import { PostCount } from '../components/counter'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -25,8 +26,12 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="blog-post-meta">
-            <span>🗓️ {post.frontmatter.date}</span>
-            <span>📖 { post.timeToRead } 分钟</span>
+            <small>🗓️ {post.frontmatter.date}</small>
+            <small>⏱️ { post.timeToRead } 分钟阅读</small>
+            <PostCount
+              path={ location.pathname }
+              name={ post.frontmatter.title }
+            />
           </p>
         </header>
         <section
