@@ -33,12 +33,12 @@ export const usePageVisitedCount = ({ path, name, readonly }) => {
           counter.set('count', 0)
           counter.save()
           refs.current.record = counter
-          return 1
+          return 0
         }
 
         const record = records[0]
         refs.current.record = record
-        return record.get('count') + 1
+        return record.get('count')
       })
       .catch((err) => {
         if (err.code === 101) { // 表没创建
@@ -48,7 +48,7 @@ export const usePageVisitedCount = ({ path, name, readonly }) => {
           counter.set('count', 0)
           counter.save()
           refs.current.record = counter
-          return 1
+          return 0
         }
       })
       .then(setData)
