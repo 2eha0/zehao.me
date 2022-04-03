@@ -28,7 +28,8 @@
   --spacing-24: 6rem;
   --spacing-32: 8rem;
   --fontFamily-sans: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --fontFamily-serif: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  /* --fontFamily-serif: charter, Georgia, Cambria, "Times New Roman", Times, serif; */
+  --fontFamily-serif: var(--fontFamily-sans);
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -51,13 +52,15 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-background: #f5f2f0;
-  --color-primary: #3F8B53;
-  --color-text: #132b1a;
-  --color-text-light: #C16347;
-  --color-heading: #132b1a;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-background: #191338;
+  --color-primary: #f7d967;
+  --color-text: #f0eff8;
+  --color-link: #3db3d0;
+  --color-link-hover: #4bdbff;
+  --color-text-light: #c24347;
+  --color-heading: #f7d967;
+  --color-heading-black: #f7d967;
+  --color-accent: #4a42ae;
 }
 
 /* HTML elements */
@@ -261,8 +264,13 @@ a:focus {
 }
 
 .main-heading {
-  font-size: var(--fontSize-7);
+  text-shadow: 2px 2px 0 #3db3d0, 4px 4px 0 #cc53d0;
+  color: #fff;
   margin: 0;
+}
+
+.main-heading {
+  font-size: var(--fontSize-7);
 }
 
 .post-list-item {
@@ -294,6 +302,8 @@ a:focus {
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
+  text-shadow: 1px 1px 0 #3db3d0, 2px 2px 0 #cc53d0;
+  color: #fff;
 }
 
 .bio {
@@ -330,20 +340,22 @@ a:focus {
 }
 
 .blog-post a {
-  color: #3b82f6;
+  color: var(--color-link);
 }
 
 .blog-post a:hover {
-  color: #1d4ed8;
+  color: var(--color-link-hover);
   text-decoration: underline;
 }
 
-.blog-post code.language-text {
+.blog-post code[class*="language-"] {
   color: var(--color-text-light);
+  text-shadow: none;
+  background-color: transparent;
 }
 
-.blog-post code.language-text:before,
-.blog-post code.language-text:after {
+.blog-post code[class*="language-"].language-text:before,
+.blog-post code[class*="language-"].language-text:after {
   content: '`';
 }
 

@@ -8,7 +8,7 @@ const Comments = () => {
     script.setAttribute('repo', '2eha0/zehao.me');
     script.setAttribute('issue-term', 'pathname');
     script.setAttribute('label', '💬');
-    script.setAttribute('theme', 'github-light');
+    script.setAttribute('theme', 'dark-blue');
     script.setAttribute('crossorigin', 'anonymous');
     script.async = true;
 

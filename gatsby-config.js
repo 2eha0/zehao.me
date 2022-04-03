@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `🌱 赛博花园`,
+    title: `赛博空间`,
     author: {
       name: `zehao`,
       summary: `Web Developer`,
@@ -35,7 +35,7 @@ module.exports = {
             resolve: `gatsby-remark-highlight-code`,
             options: {
               terminal: "carbon",
-              theme: "dracula",
+              theme: "shades-of-purple",
             },
           },
           {
@@ -107,7 +107,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "🌱 赛博花园 RSS Feed",
+            title: "赛博空间 RSS Feed",
           },
         ],
       },
@@ -115,8 +115,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `🌱 赛博花园`,
-        short_name: `🌱 赛博花园`,
+        name: `赛博空间`,
+        short_name: `赛博空间`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
