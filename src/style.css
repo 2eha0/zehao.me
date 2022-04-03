@@ -379,3 +379,9 @@ deckgo-highlight-code {
     list-style-position: inside;
   }
 }
+
+@media (max-width: 400px) {
+  :root {
+    --fontSize-root: 14px
+  }
+}
