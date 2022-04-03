@@ -38,7 +38,7 @@ const Layout = ({ location, title, children }) => {
           <a href="/rss.xml" rel="noreferrer" target="_blank">rss</a> · <a rel="noreferrer" href="https://github.com/2eha0" target="_blank">github</a>
         </div>
         <div>
-          { count && <span style={{ opacity: 0.1 }}>全站访问量: { count }</span> } &nbsp;
+          { count && <span style={{ opacity: 0 }}>全站访问量: { count }</span> } &nbsp;
           Zehao © {new Date().getFullYear()}
         </div>
       </footer>
