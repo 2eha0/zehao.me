@@ -71,10 +71,6 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          name: `baidu-site-verification`,
-          content: `code-RGjCtBQFrC`,
-        },
-        {
           name: `google-site-verification`,
           content: `Y1K5ZXnfMv-MDaFSTzD2Mg5gOeXHRUr55FxRFfNmoV4`,
         },

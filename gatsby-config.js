@@ -7,11 +7,10 @@ module.exports = {
     },
     description: `学习 / 实践 / 分享`,
     siteUrl: `https://zehao.me/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
