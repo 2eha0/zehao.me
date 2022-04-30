@@ -55,9 +55,11 @@
   --color-background: #191338;
   --color-primary: #f7d967;
   --color-text: #f0eff8;
+  --color-blockquote: rgba(240, 239, 248, 0.8);
   --color-link: #3db3d0;
   --color-link-hover: #4bdbff;
   --color-text-light: #c24347;
+  --color-text-highlight: #FA541C;
   --color-heading: #f7d967;
   --color-heading-black: #f7d967;
   --color-accent: #4a42ae;
@@ -208,9 +210,9 @@ blockquote {
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
   font-style: italic;
   margin-bottom: var(--spacing-8);
+  color: var(--color-blockquote);
 }
 
 blockquote > :last-child {
@@ -357,6 +359,11 @@ a:focus {
 .blog-post code[class*="language-"].language-text:before,
 .blog-post code[class*="language-"].language-text:after {
   content: '`';
+}
+
+.blog-post b,
+.blog-post strong {
+  color: var(--color-text-highlight)
 }
 
 .gatsby-highlight {
