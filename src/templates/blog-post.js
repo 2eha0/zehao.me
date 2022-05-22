@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <small>🗓️ {post.frontmatter.date}</small>
             <small>⏱️ { post.timeToRead } 分钟阅读</small>
             <PostCount
-              path={ location.pathname }
+              path={ post.fields.slug }
               name={ post.frontmatter.title }
             />
           </p>
@@ -96,6 +96,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD", locale: "zh-CN")
         description
+      }
+      fields {
+        slug
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
