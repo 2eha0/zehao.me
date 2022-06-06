@@ -64,8 +64,8 @@
   --color-heading: #f7d967;
   --color-heading-black: #f7d967;
   --color-accent: #4a42ae;
-  --text-shadow-logo: 2px 2px 0 var(--color-link), -2px -2px 0 var(--color-secondary);
-  --text-shadow-logo-xs: 1px 1px 0 var(--color-link), -1px -1px 0 var(--color-secondary);
+  --text-shadow-logo: 2px 2px 0 var(--color-link), -2px -2px 0 var(--color-secondary), 8px 8px 0px rgb(0 0 0 / 80%);
+  --text-shadow-logo-xs: 1px 1px 0 var(--color-link), -1px -1px 0 var(--color-secondary), 4px 4px 0px rgb(0 0 0 / 80%);
   --text-shadow-heading: 8px 8px 0px rgb(0 0 0 / 80%);
   --text-shadow-hightlight: 4px 4px 0px rgb(0 0 0 / 80%);
 }

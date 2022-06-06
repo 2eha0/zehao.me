@@ -35,7 +35,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         <div>
-          <a href="/rss.xml" rel="noreferrer" target="_blank">rss</a> · <a rel="noreferrer" href="https://github.com/2eha0" target="_blank">github</a>
+          <a href="/rss.xml" rel="noreferrer" target="_blank">rss</a> · <a rel="noreferrer" href="https://github.com/2eha0" target="_blank">github</a> · <a rel="noreferrer" href="mailto:mail@zehao.me">@</a>
         </div>
         <div>
           { count && <span style={{ opacity: 0 }}>全站访问量: { count }</span> } &nbsp;
